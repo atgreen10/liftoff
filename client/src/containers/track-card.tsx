@@ -2,6 +2,7 @@ import React from "react";
 import styled from "@emotion/styled";
 import { colors, mq } from "../styles";
 import { humanReadableTimeFromSeconds } from "../utils/helpers";
+import type { Track } from '../__generated__/graphql';
 
 /**
  * Track Card component renders basic info in a card format
@@ -9,7 +10,7 @@ import { humanReadableTimeFromSeconds } from "../utils/helpers";
  */
 const TrackCard: React.FC<{ track: Track }> = ({ track }) => {
   const { title, thumbnail, author, length, modulesCount } = track;
-
+//...
   return (
     <CardContainer>
       <CardContent>
